@@ -8,6 +8,7 @@ resource "aws_db_instance" "tf_rds" {
   username          = "admin"
   password          = "X9Kr8REPKhbQa5Qw"
   availability_zone = var.availability_zone
+  vpc_security_group_ids = [aws_security_group.tf_rds_sg.id]
 
   tags = {
     Name = "TF RDS Instance"
