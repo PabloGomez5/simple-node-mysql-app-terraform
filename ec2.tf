@@ -41,3 +41,7 @@ resource "aws_security_group" "tf_ec2_sg" {
     Name = "TF EC2 Security Group"
   }
 }
+
+output "tf_ec2_instance_ip" {
+  value = aws_instance.tf_ec2_instance.public_ip
+}
