@@ -1,6 +1,6 @@
 variable "ami" {
   type = string
-  default = "ami-0ff4c8fb495a5a50d"
+  default = "ami-0885b1f6bd170450c"
 }
 
 variable "instance_type" {
@@ -10,10 +10,10 @@ variable "instance_type" {
 
 variable "key_name" {
   type = string
-  default = "awol_key"
+  default = "webapp"
 }
 
 variable "availability_zone" {
   type = string
-  default = "eu-west-2a"
+  default = "us-east-1f"
 }

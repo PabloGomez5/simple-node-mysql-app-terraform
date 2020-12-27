@@ -7,4 +7,5 @@ terraform output | grep rds | sed -e 's/ =/:/' | sed -e 's/"//g' |sed -e 's/:330
 
 rm -f ../simple-node-mysql-app-ansible/hosts
 
+echo "[all]" > ../simple-node-mysql-app-ansible/hosts
 terraform output |grep ec2 |cut -d\" -f2 > ../simple-node-mysql-app-ansible/hosts
